@@ -14,7 +14,7 @@ tpot.fit(X_train, y_train)
 print(tpot.score(X_test, y_test))
 tpot.export("cross val tpot", 'tpot_exports/tpot_titanic_pipeline.py')
 
-# from prep import X, y
+# from prep import X_train, y_train, X_test, y_test
 
-# training_features, training_target = X[::2], y[::2]
-# testing_features, testing_target = X[1::2], y[1::2]
+# training_features, training_target = X_train, y_train
+# testing_features, testing_target = X_test, y_test
