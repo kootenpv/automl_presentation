@@ -23,4 +23,6 @@ docs/_static/*
 .coverage.*
 .coveralls.yml
 save
+data/titanic_train.csv
+data/titanic_test.csv
 .python-version
