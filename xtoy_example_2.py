@@ -6,4 +6,4 @@ toy.fit(X_train, y_train)
 
 y_preds = toy.predict(X_test)
 
-print("xtoy", (y_preds == y_test).mean())
+print("crossval xtoy", (y_preds == y_test).mean())

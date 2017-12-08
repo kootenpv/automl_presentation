@@ -12,7 +12,7 @@ tpot = TPOTClassifier(generations=5, population_size=20, verbosity=2)
 
 tpot.fit(X_train, y_train)
 print(tpot.score(X_test, y_test))
-tpot.export('tpot_exports/tpot_titanic_pipeline.py')
+tpot.export("cross val tpot", 'tpot_exports/tpot_titanic_pipeline.py')
 
 # from prep import X, y
 

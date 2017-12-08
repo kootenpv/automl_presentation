@@ -13,7 +13,7 @@ automl = autosklearn.classification.AutoSklearnClassifier(time_left_for_this_tas
 automl.fit(X_train, np.array(y_train))
 
 preds = automl.predict(X_test)
-print("autosklearn", (preds == y_test).mean())
+print("crossval autosklearn", (preds == y_test).mean())
 
 # In [9]: (preds==y_test).mean()
 # Out[9]: 0.80000000000000004
