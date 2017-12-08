@@ -1,9 +1,6 @@
-from xtoy import Toy
-from prep import X_train, y_train, X_test, y_test
+from xtoy import Sparsify
+from prep import X
 
-toy = Toy()
-toy.fit(X_train, y_train)
+s = Sparsify(regex_patterns={"name_title": ", ([^.]+)"})
 
-y_preds = toy.predict(X_test)
-
-print("xtoy", (y_preds == y_test).mean())
+s.fit_transform(X)
